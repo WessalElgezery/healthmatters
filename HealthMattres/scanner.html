@@ -1,0 +1,291 @@
+﻿<html>
+<head>
+  <title>Format ImagesLoader</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="icon" href="img/image-removebg-preview.png">
+  <!-- Render All Element Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+   <!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<!-- Custom Fonts -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- Format Images loader CSS -->
+  <link rel="stylesheet" href="./css/jquery.imagesloader.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" crossorigin="anonymous"></script>
+
+  <!-- Images loader -->
+  <script src="./js/jquery.imagesloader-1.0.1.js"></script>
+
+  <title> HealthMatters </title>
+</head>
+<body>
+    <!-- Start Header Section -->
+    <div class="header" id="header">
+        <div class="container">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="img/logo-removebg-preview.png" alt="logo">
+                </div>
+                <div class="list-items">
+                    <i class="fa-solid fa-bars menu"></i>
+                    <ul>
+                      <li><i class="fa-solid fa-house-chimney togel"></i></li>
+                      <li><a href="index.html"> Home </a></li>
+                      <li><a href="solution.html"> solution</a></li>
+                      <li><a href="doctor.html"> doctor </a></li>
+                      <li><a href="chat.html"> chat</a></li>
+                      <li><a href="todo.html"> followship</a></li>
+                      <li><a href="Emergency.html"> emergency</a></li>
+                      <li><a href="Medicine.html"> medicine</a></li>
+                      <li><a href="contact us.html"> contact us</a></li>
+                      <li><a href="f&q.html"> F & Q </a></li>
+                      <button class="activ"> sign in </button>
+                      <button> sign up </button>
+                  </ul>
+                </div>
+                <div class="left-nav">
+                    <button> sign in </button>
+                    <div class="lang">
+                        <span>EN</span>
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header Section -->
+
+<body>
+
+  <div class="container col-8 pt-5">
+
+    <form id="frm" method="post" class="needs-validation" novalidate="">
+
+      <!--Image Upload-->
+      <div class="row mt-3 mb-2">
+
+        <div class="col-12 pr-0 text-left">
+          <label for="Images" class="col-form-label text-nowrap"><strong> upload your prescreption</strong></label>
+        </div>
+      </div>
+
+      <!--Image container -->
+      <div class="row"
+           data-type="imagesloader"
+           data-errorformat="Accepted file formats"
+           data-errorsize="Maximum size accepted"
+           data-errorduplicate="File already loaded"
+           data-errormaxfiles="Maximum number of images you can upload"
+           data-errorminfiles="Minimum number of images to upload"
+           data-modifyimagetext="Modify immage">
+
+        <!-- Progress bar -->
+        <div class="col-12 order-1 mt-2">
+          <div data-type="progress" class="progress" style="height: 25px; display:none;">
+            <div data-type="progressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%;">Load in progress...</div>
+          </div>
+        </div>
+
+        <!-- Model -->
+        <div data-type="image-model" class="col-4 pl-2 pr-2 pt-2" style="max-width:200px; display:none;">
+
+          <div class="ratio-box text-center" data-type="image-ratio-box">
+            <img data-type="noimage" class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src="./img/photo-camera-gray.svg" style="cursor:pointer;background-color: transparent;">
+            <div data-type="loading" class="img-loading" style="color:#218838; display:none;">
+              <span class="fa fa-2x fa-spin fa-spinner"></span>
+            </div>
+            <img data-type="preview" class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src="" style="display: none; cursor: default;">
+            <span class="badge badge-pill badge-success p-2 w-50 main-tag" style="display:none;">Main</span>
+          </div>
+
+          <!-- Buttons -->
+          <div data-type="image-buttons" class="row justify-content-center mt-2">
+            <button data-type="add" class="btn btn-outline-success" type="button"><span class="fa fa-camera mr-2"></span>Add</button>
+            <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0" data-toggle="popover" data-placement="right" style="display:none;">
+              <span class="fa fa-pencil-alt mr-2"></span>Modify
+            </button>
+          </div>
+        </div>
+
+        <!-- Popover operations -->
+        <div data-type="popover-model" style="display:none">
+          <div data-type="popover" class="ml-3 mr-3" style="min-width:150px;">
+            <div class="row">
+              <div class="col p-0">
+                <button data-operation="main" class="btn btn-block btn-success btn-sm rounded-pill" type="button"><span class="fa fa-angle-double-up mr-2"></span>Main</button>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-6 p-0 pr-1">
+                <button data-operation="left" class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button"><span class="fa fa-angle-left mr-2"></span>Left</button>
+              </div>
+              <div class="col-6 p-0 pl-1">
+                <button data-operation="right" class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">Right<span class="fa fa-angle-right ml-2"></span></button>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-6 p-0 pr-1">
+                <button data-operation="rotateanticlockwise" class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button"><span class="fas fa-undo-alt mr-2"></span>Rotate</button>
+              </div>
+              <div class="col-6 p-0 pl-1">
+                <button data-operation="rotateclockwise" class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">Rotate<span class="fas fa-redo-alt ml-2"></span></button>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <button data-operation="remove" class="btn btn-outline-danger btn-sm btn-block" type="button"><span class="fa fa-times mr-2"></span>Remove</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+        <div class="input-group">
+          <!--Hidden file input for images-->
+          <input id="files" type="file" name="files[]" data-button="" multiple="" accept="image/jpeg, image/png, image/gif," style="display:none;">
+        </div>
+      </div>
+
+    </form>
+
+    <div class="row mt-2">
+      <div class="col-md-4 offset-md-8 text-center mb-4">
+      <a href="thx.html"><button  class="btn btn-block btn-outline-success float-right" data-toggle="tooltip" data-trigger="manual" data-placement="top" data-title="Continue">
+          submit<span id="btnContinueIcon" class="fa fa-chevron-circle-right ml-2"></span><span id="btnContinueLoading" class="fa fa-spin fa-spinner ml-2" style="display:none"></span>
+        </button></a>  
+      </div>
+    </div>
+
+  </div>
+
+        <!-- Start Footer Section -->
+        <div class="footer">
+          <img class="vector" src="img/ss-4.svg" alt="vector">
+          <div class="container">
+              <div class="content">
+                  <div class="box">
+                      <h4> Links </h4>
+                      <ul>
+                          <li> Home </li>
+                          <li> problem </li>
+                          <li> solution</li>
+                          <li> doctor </li>
+                          <li> chat</li>
+                          <li> medicine</li>
+                          <li> emergency</li>
+                          <li> contact us</li>
+                      </ul>
+                  </div>
+                  <div class="box">
+                      <h4> Support and service</h4>
+                      <ul>
+                          <li> blog</li>
+                          <li> frequnety questions</li>
+                          <li> advantages</li>
+                          <li> news</li>
+                          <li> services</li>
+                      </ul>
+                  </div>
+                  <div class="box">
+                      <h4> contact us</h4>
+                      <div class="maile">
+                          <i class="fa-solid fa-envelope"></i>
+                          <span>healthmatters52@gmail.com</span>
+                      </div>
+                      <div class="phone">
+                          <i class="fa-solid fa-phone"></i>
+                          <span>+201093922766</span>
+                      </div>
+                      <div class="location">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span>Maadi STEM school, Zahraa el maadi</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="contacts">
+                  <div class="form">
+                      <button> ask now</button>
+                      <input class="input" type="url" placeholder=" email address" name="url" id="url">
+                      
+                  </div>
+                  <div class="img">
+                      <img src="img/logo footer.png" alt="">
+                  </div>
+                  <div class="social">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-linkedin-in"></i>
+                          <i class="fa-brands fa-youtube"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                  </div>
+              </div>
+          </div>
+          <p class="copyright"><span> Healthmaters</span>   all rights are reserved <bdi>2022 &copy;</bdi></p>
+      </div>
+      <!-- End Footer Section -->
+      <!-- scripts -->
+      
+  <!-- Custom javascript -->
+  <script type="text/javascript">
+
+    // Ready
+    $(document).ready(function () {
+
+      //Image loader var to use when you need a function from object
+      var auctionImages = null;
+
+      // Create image loader plugin
+      var imagesloader = $('[data-type=imagesloader]').imagesloader({
+        maxFiles: 4
+        , minSelect: 1
+        , imagesToLoad: auctionImages
+      });
+
+      //Form
+      $frm = $('#frm');
+
+      // Form submit
+      $frm.submit(function (e) {
+
+        var $form = $(this);
+
+        var files = imagesloader.data('format.imagesloader').AttachmentArray;
+
+        var il = imagesloader.data('format.imagesloader');
+
+        if (il.CheckValidity())
+          alert('Upload ' + files.length + ' files');        
+
+        e.preventDefault();
+        e.stopPropagation();
+      });
+
+    });
+
+  </script>
+
+    
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/0268a9b753.js" crossorigin="anonymous"></script>
+      <script src="js/index.js"></script>
+  </body>
+</html>
